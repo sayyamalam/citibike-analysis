@@ -10,3 +10,6 @@ DATA_RAW = os.path.join(DATA_DIR, "data_raw")
 DATA_PROCESSED = os.path.join(DATA_DIR, "data_processed")
 DATA_SPATIAL = os.path.join(DATA_DIR, "data_spatial")
 DATA_TEMPORAL = os.path.join(DATA_DIR, "data_temporal")
+
+# Abbildungsverzeichnis
+FIGURES_DIR = os.path.join(PROJECT_ROOT, "figures")
