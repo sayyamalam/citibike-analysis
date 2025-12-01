@@ -1,0 +1,17 @@
+[project]
+name = "citibike-analysis"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "ipykernel",
+    "pyarrow"
+]
+
+# Markiert dieses Projekt als installierbares Python-Paket
+[tool.uv]
+package = true
