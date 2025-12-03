@@ -93,11 +93,3 @@ python -m ipykernel install --user --name citibike --display-name "Citibike Env"
 ```
 
 ---
-
-## Verwendete Datenquellen
-
-CitiBike Trip Data: https://s3.amazonaws.com/tripdata/index.html
-
-NYPD Motor Vehicle Collisions: https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
-
----
