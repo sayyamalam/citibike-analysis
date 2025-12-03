@@ -1,7 +1,7 @@
 import os
 import glob
 import pandas as pd
-from citibike_analysis.utils.paths import DATA_RAW, DATA_PROCESSED
+from citibike_analysis.utils.paths import DATA_RAW, DATA_RAW_PROCESSED
 
 def load_citibike_raw(root=None, outpath=None):
     """
@@ -12,7 +12,7 @@ def load_citibike_raw(root=None, outpath=None):
 
     # Standardpfade verwenden, falls nicht explizit angegeben
     root = root or os.path.join(DATA_RAW, "2023-citibike-tripdata")
-    outpath = outpath or os.path.join(DATA_PROCESSED, "citibike_raw_concat.parquet")
+    outpath = outpath or os.path.join(DATA_RAW_PROCESSED, "citibike_raw_concat.parquet")
 
     # Falls die fertige Datei bereits existiert wird sie direkt geladen
     if os.path.exists(outpath):
@@ -71,7 +71,7 @@ def load_nypd_raw(src=None, outpath=None):
     """
 
     src = src or os.path.join(DATA_RAW, "nypd_data", "Motor_Vehicle_Collisions_-_Crashes_20251122.csv")
-    outpath = outpath or os.path.join(DATA_PROCESSED, "nypd_raw.parquet")
+    outpath = outpath or os.path.join(DATA_RAW_PROCESSED, "nypd_raw.parquet")
 
     if os.path.exists(outpath):
         print(f"NYPD-Daten aus bestehender Datei geladen: {os.path.basename(outpath)}")
