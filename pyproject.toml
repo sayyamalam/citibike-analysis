@@ -5,13 +5,15 @@ requires-python = ">=3.10"
 
 dependencies = [
     "pandas",
-    "numpy",
+    "numpy==1.26.4",
     "matplotlib",
     "seaborn",
     "ipykernel",
     "pyarrow",
     "contextily",
-    "pyproj"
+    "pyproj",
+    "scipy",
+    "statsmodels"
 ]
 
 # Markiert dieses Projekt als installierbares Python-Paket
