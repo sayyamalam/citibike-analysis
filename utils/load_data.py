@@ -1,7 +1,9 @@
 import os
 import glob
 import pandas as pd
-from citibike_analysis.utils.paths import DATA_RAW, DATA_RAW_PROCESSED
+import sys
+sys.path.append("../..")
+from utils.paths import DATA_RAW, DATA_RAW_PROCESSED
 
 def load_citibike_raw(root=None, outpath=None):
     """

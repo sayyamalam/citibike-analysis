@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 # Projektroot relativ zur Position dieser Datei
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # Datenverzeichnisse
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
